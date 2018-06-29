@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRouter from './routers/AppRouter';
 import { Provider } from 'react-redux';
-import Tienda from './tienda/Tienda';
+import {createStore, applyMiddleware} from 'redux';
 import 'normalize.css/normalize.css';
-import './estilos/styles.scss';
 
-const tienda = Tienda();
+import App from './componentes/App';
+import reducers from './reducers';
+const tienda = applyMiddleware()(createStore);
 
 const jsx = (
     <Provider 
-    store={tienda} 
+    store={tienda(reducers)} 
     >
-        <AppRouter />
+        <App/>
     </Provider>
 );
 
-ReactDOM.render(<AppRouter/>, document.getElementById('app'));
+ReactDOM.render(jsx, document.getElementById('app'));
 
