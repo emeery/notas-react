@@ -2,7 +2,7 @@ import React from 'react';
 class App extends React.Component {
     render() { 
         return(<div>
-            <p>Boilerplate</p>
+            <p>Plantilla React-Redux</p>
             </div>
         )
     }

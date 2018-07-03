@@ -1,5 +1,7 @@
-import {combineReducers} from 'redux';
-const rootReducer = combineReducers({
-    state: (state={}) => state
-});
-export default rootReducer;
+export default function () {
+    return [
+        {titulo: 'Pedro Páramo'},
+        {titulo: 'Rayuela'},
+        {titulo: 'El amor en tiempos de Colera'}
+    ]
+}

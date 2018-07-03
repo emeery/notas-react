@@ -1,16 +1,15 @@
 import { createStore, combineReducers,  applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';  
-import reducerLibros from '../reducers/reducerLibros';
-import reducerLibroActivo from '../reducers/reducerLibroActivo';  
-
-const componePotencia = window.__REDUX_DEVTOOLS_EXTENSION__ || compose;
+import ObrasLiterarias from '../reducers/index';
+import {composeWithDevTools} from 'redux-devtools-extension';
 // reducer general
 export default () => {
     const tienda = createStore(
         combineReducers({ 
-            libros: reducerLibros,
-            libroActivo: reducerLibroActivo
+            libros: ObrasLiterarias
         }),
-        applyMiddleware(thunk)
+        composeWithDevTools(
+            applyMiddleware(thunk)
+        )
     ); return tienda;
 };
