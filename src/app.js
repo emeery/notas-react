@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import Tienda from './tienda/Tienda';
+import './estilos/styles.scss';
 import App from './componentes/App';
 
 import 'normalize.css/normalize.css';

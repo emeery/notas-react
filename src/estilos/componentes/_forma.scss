@@ -1,0 +1,24 @@
+.forma_input{
+    color: white;
+    background: $azul-marino;
+    flex-grow: 1;
+    margin-right: $talla-s;
+    padding: $talla-s;
+    color: $blanco;
+    text-align: center;
+    font-family: $roboto;
+    font-weight: 500;
+    margin: 0 0 $talla-s 0; // fondo 
+    font-size: $talla-m;
+    border: none;
+    border-bottom: .3rem solid darken($azul-marino, 10%);
+}
+
+.boton {
+    background-color: $purpura;
+    border: none;
+    border-bottom: .3rem solid darken($purpura, 10%); // punto y coma
+    color: whitesmoke;
+    padding: $talla-s;
+    
+}

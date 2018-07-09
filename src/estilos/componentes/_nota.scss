@@ -1,0 +1,26 @@
+.nota {
+    border-bottom: .7rem solid darken(teal, 10%);
+    display: flex;
+    justify-content: space-between;
+    padding: $talla-l $talla-m;
+    margin-bottom: 2rem;
+    color: lightyellow;
+    background-color: lightseagreen;
+}
+.nota__titulo {
+    color: $blanco;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2rem;
+    word-break: break-all;
+    margin-right: 2rem;
+    h2 {font-family: $allan;}
+}
+.x {
+    background-color: lightsalmon;
+    border: none;
+    border-bottom: .3rem solid darken($purpura, 10%); // punto y coma
+    color: whitesmoke;
+    padding: $talla-s;
+    
+}

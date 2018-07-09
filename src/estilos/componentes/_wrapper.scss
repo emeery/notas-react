@@ -1,0 +1,14 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 50rem;
+    padding: 1.3rem;
+}
+
+.widget__mensaje {
+    color:$blanco;
+    margin: 0;
+    padding: $talla-l;
+    text-align: center;
+    border-bottom: 1px solid lighten($azul-cielo, 10%);
+    margin-bottom: 2rem;
+}
