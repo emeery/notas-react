@@ -1,2 +1,2 @@
-## Una Plantilla 
-# plantilla react-redux.
+## App de Notas con ReactJS y Firebase
+# .
